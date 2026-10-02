@@ -5,8 +5,7 @@ Power BI dashboard built for FP20 Analytics Challenge 41 (PMO Portfolio) with Zo
 ## Contents
 - `PMO-Portfolio.pbix` - final report
 - `PMO Portfolio_From Strategy to Success_C41.xlsx` - source data
-- `PMO-Portfolio_C41.pbip`, `.Report/`, `.SemanticModel/` - Power BI project (source-control friendly format)
-- `_model_backup_*.tmdl` - latest model backups (measures, DimProject)
+- `Challenge Intro Brief_PMO Portfolio From Strategy to Success_C41.docx` - challenge brief
 
 Note: the data source path in the model is an absolute local path; update it in Power Query after cloning.
 
