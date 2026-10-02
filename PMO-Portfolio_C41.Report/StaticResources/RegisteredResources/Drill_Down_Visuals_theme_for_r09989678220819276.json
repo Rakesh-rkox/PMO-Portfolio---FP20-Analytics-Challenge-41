@@ -1,0 +1,102 @@
+{
+  "name": "Drill Down Visuals theme for rakeshmeshua@gmail.com",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "paid": [
+          {
+            "show": true
+          }
+        ],
+        "license": [
+          {
+            "key": "ZoomCharts Drill Down Visuals Developer License (valid until: 2027-06-05);PBID-v47ryztv8#b8S5LV+JVIZ48zh8W0huLsJZIMilEEdgb7V11/ZAC5X+dbfbmcS7whVREJDa1fSbLnXhIqqwQ5BLJ0wupOj4DgERl3Pe+JAeqxkG0YmgWnwfp6bpJp6Wq6gsFNzOYmvLLMHbmwbQD8FbzKujGfqg8fAF7sLjBKKwB",
+            "hash": "rcgaEmICvYvq1aA5uZbiadWeyehrhXtr70KrKq8yqjNDcSrUKNnoTI+bH68jhB/9+PXfJ8lrRYchJ/JFJCDTH+g8NhBPGcEsO+VSDrau4L5n4S1nSjh9FlsTczDv2LGWniIEujdLwxpEVyGDUHckumA2ehpXhgxZoBmGFiJqCiFkj0ji5glzg=="
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#7A6A66"
+              }
+            },
+            "fontSize": 11
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#7A6A66"
+              }
+            },
+            "fontSize": 11,
+            "gridlineColor": {
+              "solid": {
+                "color": "#EDE6DE"
+              }
+            }
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#7A6A66"
+              }
+            },
+            "fontSize": 11
+          }
+        ]
+      }
+    }
+  },
+  "dataColors": [
+    "#8E2C48",
+    "#D4A441",
+    "#C8673A",
+    "#6D3B5E",
+    "#E5484D",
+    "#1FA971",
+    "#4A4A55",
+    "#B5838D",
+    "#9C6B3C",
+    "#7C8F5B",
+    "#B5502F",
+    "#8C5A7A"
+  ],
+  "foreground": "#2E2226",
+  "foregroundNeutralSecondary": "#7A6A66",
+  "background": "#FFFFFF",
+  "backgroundLight": "#E8DFD6",
+  "tableAccent": "#8E2C48",
+  "good": "#1FA971",
+  "neutral": "#C8673A",
+  "bad": "#E5484D",
+  "maximum": "#1FA971",
+  "center": "#C8673A",
+  "minimum": "#E5484D",
+  "textClasses": {
+    "callout": {
+      "fontSize": 30,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#4A1426"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#4A1426"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#4A1426"
+    },
+    "label": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI",
+      "color": "#7A6A66"
+    }
+  }
+}

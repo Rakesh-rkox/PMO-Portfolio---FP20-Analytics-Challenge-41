@@ -1,0 +1,34 @@
+table DimStrategicTheme
+	lineageTag: dcecc2ca-7594-476e-bb8d-fd0ef14bf6b2
+
+	column StrategicThemeKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 20394637-eb65-41b9-be25-20c32e169e22
+		summarizeBy: none
+		sourceColumn: StrategicThemeKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column StrategicTheme
+		dataType: string
+		lineageTag: 19d2f8df-0845-4788-b8de-5297312cd1de
+		summarizeBy: none
+		sourceColumn: StrategicTheme
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimStrategicTheme = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\ENVY\Downloads\PMO-Portfolio_C41\PMO Portfolio_From Strategy to Success_C41.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "DimStrategicTheme", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"StrategicThemeKey", Int64.Type}, {"StrategicTheme", type text}}, "en-US")
+				in
+				  #"Changed column type"
+

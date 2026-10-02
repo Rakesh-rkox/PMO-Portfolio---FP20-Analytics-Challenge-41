@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PMO-Portfolio_C41"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "857e9069-7049-49fb-8360-15db94c9b292"
+  }
+}

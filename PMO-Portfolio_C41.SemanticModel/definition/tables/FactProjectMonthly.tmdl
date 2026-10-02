@@ -1,0 +1,516 @@
+table FactProjectMonthly
+	lineageTag: 227a178f-540f-4156-8aa6-67ab1194f6ce
+
+	column SnapshotKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 512f27fb-5da0-40e5-886d-95463ad208f5
+		summarizeBy: count
+		sourceColumn: SnapshotKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportingDateKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5f9e7a3a-528a-4284-b2b4-c11f667e841f
+		summarizeBy: none
+		sourceColumn: ReportingDateKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 04e41321-e253-44e9-85c1-aee0d958bce3
+		summarizeBy: none
+		sourceColumn: ProjectKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProgrammeKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c6d1eb39-18d3-412b-81bc-23712faad7b4
+		summarizeBy: none
+		sourceColumn: ProgrammeKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column BusinessUnitKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c5fdf2af-b5c4-4327-a16f-ed37d6ce4bdd
+		summarizeBy: none
+		sourceColumn: BusinessUnitKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectManagerKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8b3ccd2e-b51d-498e-ac0d-6d8bad5fde66
+		summarizeBy: none
+		sourceColumn: ProjectManagerKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SponsorKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 132a09d3-ed42-477b-ab4b-f922ff3a7e37
+		summarizeBy: count
+		sourceColumn: SponsorKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 502419c2-b49e-47fb-aea8-1eddc15e153c
+		summarizeBy: none
+		sourceColumn: LocationKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryModelKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: de349f9c-f6c4-4fd3-bb45-93f61d10a590
+		summarizeBy: none
+		sourceColumn: DeliveryModelKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column StrategicThemeKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a5375529-1911-4fd0-a52d-71b06b9ff47b
+		summarizeBy: none
+		sourceColumn: StrategicThemeKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProjectStatus
+		dataType: string
+		lineageTag: 850d5108-671f-4168-b24e-60602fd4b044
+		summarizeBy: none
+		sourceColumn: ProjectStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column LifecycleStage
+		dataType: string
+		lineageTag: ee9830c1-a40c-47c7-8d9c-ea0154fe10d8
+		summarizeBy: none
+		sourceColumn: LifecycleStage
+
+		annotation SummarizationSetBy = Automatic
+
+	column RAGStatus
+		dataType: string
+		lineageTag: 467dee35-887b-4434-a2a3-2bb87ef9716e
+		summarizeBy: none
+		sourceColumn: RAGStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedProgressPct
+		dataType: double
+		lineageTag: ecd4297b-f098-485c-ba07-a3adf4c53424
+		summarizeBy: sum
+		sourceColumn: PlannedProgressPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ActualProgressPct
+		dataType: double
+		lineageTag: b324469a-c2f7-4ff8-a60e-8ec6a680cd52
+		summarizeBy: sum
+		sourceColumn: ActualProgressPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BaselineBudgetEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 81a82626-5914-4f2d-9e9c-44d9eebe5cd2
+		summarizeBy: sum
+		sourceColumn: BaselineBudgetEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedCostToDateEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: a47f2f2c-43c3-4242-b6be-6e2887ca6a9c
+		summarizeBy: sum
+		sourceColumn: PlannedCostToDateEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualCostToDateEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: dc230f42-a6f3-496a-bee1-3743051ef20b
+		summarizeBy: sum
+		sourceColumn: ActualCostToDateEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ForecastTotalCostEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 724ed475-854b-4236-9faf-bf89a49e64de
+		summarizeBy: sum
+		sourceColumn: ForecastTotalCostEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ScheduleVarianceEUR
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8e5fc4cf-6381-4533-b85f-d460187e8a10
+		summarizeBy: sum
+		sourceColumn: ScheduleVarianceEUR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostVarianceEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ebb179e-b120-4fd1-a46f-449844ef32cb
+		summarizeBy: sum
+		sourceColumn: CostVarianceEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SchedulePerformanceIndex
+		dataType: double
+		lineageTag: ad7c9bc1-9c83-439c-abe8-03cd51eced4c
+		summarizeBy: sum
+		sourceColumn: SchedulePerformanceIndex
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostPerformanceIndex
+		dataType: double
+		lineageTag: b7f4442c-a4c2-44cc-ae3f-599150e06e96
+		summarizeBy: sum
+		sourceColumn: CostPerformanceIndex
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BaselineCompletionDateKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f2d2c162-29e6-49c1-9632-fe7cbe85c690
+		summarizeBy: count
+		sourceColumn: BaselineCompletionDateKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ForecastCompletionDateKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b1a7abd1-7792-49a7-b72f-590bac679627
+		summarizeBy: count
+		sourceColumn: ForecastCompletionDateKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ForecastDelayDays
+		dataType: int64
+		formatString: 0
+		lineageTag: 3edcfb1b-8464-4ee7-aa4c-79b4074039fb
+		summarizeBy: sum
+		sourceColumn: ForecastDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalMilestones
+		dataType: int64
+		formatString: 0
+		lineageTag: 863dcc06-cb78-469a-9055-e9aa3b80f377
+		summarizeBy: sum
+		sourceColumn: TotalMilestones
+
+		annotation SummarizationSetBy = Automatic
+
+	column MilestonesDue
+		dataType: int64
+		formatString: 0
+		lineageTag: c4d94d42-7b60-49fe-9e61-e1f86870681d
+		summarizeBy: sum
+		sourceColumn: MilestonesDue
+
+		annotation SummarizationSetBy = Automatic
+
+	column MilestonesCompletedOnTime
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ee4ebac-2ada-49bd-b67f-15eaa0028e5b
+		summarizeBy: sum
+		sourceColumn: MilestonesCompletedOnTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column OverdueMilestones
+		dataType: int64
+		formatString: 0
+		lineageTag: 4dd7f7f0-2ea5-46c1-bf40-ed9249c8fca1
+		summarizeBy: sum
+		sourceColumn: OverdueMilestones
+
+		annotation SummarizationSetBy = Automatic
+
+	column CriticalMilestonesOverdue
+		dataType: int64
+		formatString: 0
+		lineageTag: cf58e91a-f27e-4ba6-b88e-cba71c8951e7
+		summarizeBy: sum
+		sourceColumn: CriticalMilestonesOverdue
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedResourceHours
+		dataType: int64
+		formatString: 0
+		lineageTag: 56cf5956-f1af-4f39-8525-089d38aebfce
+		summarizeBy: sum
+		sourceColumn: PlannedResourceHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column AvailableResourceHours
+		dataType: int64
+		formatString: 0
+		lineageTag: b7a74a03-1761-45c3-ae56-6b1ac338ec4e
+		summarizeBy: sum
+		sourceColumn: AvailableResourceHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualResourceHours
+		dataType: int64
+		formatString: 0
+		lineageTag: 47b51051-b55d-4e58-a599-d3cb199e4390
+		summarizeBy: sum
+		sourceColumn: ActualResourceHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceCapacityGapHours
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ee7423e-9259-41f5-b110-d5fb907b9b62
+		summarizeBy: sum
+		sourceColumn: ResourceCapacityGapHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column OpenRisks
+		dataType: int64
+		formatString: 0
+		lineageTag: daf2a33a-1ed0-435e-b6fc-534e6701bd57
+		summarizeBy: sum
+		sourceColumn: OpenRisks
+
+		annotation SummarizationSetBy = Automatic
+
+	column CriticalRisks
+		dataType: int64
+		formatString: 0
+		lineageTag: f6ff9b84-9dca-4ed1-be02-f659053f18df
+		summarizeBy: sum
+		sourceColumn: CriticalRisks
+
+		annotation SummarizationSetBy = Automatic
+
+	column RiskExposureScore
+		dataType: int64
+		formatString: 0
+		lineageTag: 3473fb15-eb5e-47b3-a333-17550148af7a
+		summarizeBy: sum
+		sourceColumn: RiskExposureScore
+
+		annotation SummarizationSetBy = Automatic
+
+	column OverdueMitigationActions
+		dataType: int64
+		formatString: 0
+		lineageTag: 56df63b7-dbba-4383-bd13-c48f302af680
+		summarizeBy: sum
+		sourceColumn: OverdueMitigationActions
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedBenefitEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c8e9781-4bb1-4e78-a4ea-6cce2768abcb
+		summarizeBy: sum
+		sourceColumn: PlannedBenefitEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlannedBenefitToDateEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 374376b7-3355-4951-81e2-6c1e0d8dc03d
+		summarizeBy: sum
+		sourceColumn: PlannedBenefitToDateEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ForecastBenefitEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 26e14596-5d37-4c46-b563-d0c67bf5856e
+		summarizeBy: sum
+		sourceColumn: ForecastBenefitEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column RealisedBenefitToDateEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 8102f22e-41db-46b5-a188-8d6e517d326c
+		summarizeBy: sum
+		sourceColumn: RealisedBenefitToDateEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column BenefitRealisationPct
+		dataType: double
+		lineageTag: 43641316-1486-4fe9-97d8-bcd13dc3688e
+		summarizeBy: sum
+		sourceColumn: BenefitRealisationPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ApprovedScopeChanges
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e93252e-1f24-4ef5-b307-fa3f2644672c
+		summarizeBy: sum
+		sourceColumn: ApprovedScopeChanges
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApprovedChangeValueEUR
+		dataType: int64
+		formatString: 0
+		lineageTag: 5fb3a891-78cf-4e4c-9549-43f25a48712c
+		summarizeBy: sum
+		sourceColumn: ApprovedChangeValueEUR
+
+		annotation SummarizationSetBy = Automatic
+
+	column OpenQualityDefects
+		dataType: int64
+		formatString: 0
+		lineageTag: c17ff0d5-0149-486e-aafb-f869450bb4e9
+		summarizeBy: sum
+		sourceColumn: OpenQualityDefects
+
+		annotation SummarizationSetBy = Automatic
+
+	column StakeholderConfidenceScore
+		dataType: int64
+		formatString: 0
+		lineageTag: 8359e141-0ce9-49fc-919a-77545c55994a
+		summarizeBy: sum
+		sourceColumn: StakeholderConfidenceScore
+
+		annotation SummarizationSetBy = Automatic
+
+	column PortfolioHealthScore
+		dataType: double
+		lineageTag: 51e8d69b-a140-4c47-9ca3-d171a7f942db
+		summarizeBy: sum
+		sourceColumn: PortfolioHealthScore
+
+	column 'Is Final Snapshot' =
+			VAR LastKey =
+			    CALCULATE (
+			        MAX ( FactProjectMonthly[ReportingDateKey] ),
+			        ALLEXCEPT ( FactProjectMonthly, FactProjectMonthly[ProjectKey] )
+			    )
+			RETURN
+			    IF ( FactProjectMonthly[ReportingDateKey] = LastKey, 1, 0 )
+		dataType: int64
+		lineageTag: 2ecbbe6e-2aaa-494b-98fe-d247d0d660da
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Earned Value Row EUR' = FactProjectMonthly[ActualProgressPct] * FactProjectMonthly[BaselineBudgetEUR]
+		dataType: double
+		lineageTag: 5aa6db84-5194-443a-9dee-aa9f8d78e054
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactProjectMonthly = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\ENVY\Downloads\PMO-Portfolio_C41\PMO Portfolio_From Strategy to Success_C41.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "FactProjectMonthly", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"SnapshotKey", Int64.Type}, {"ReportingDateKey", Int64.Type}, {"ProjectKey", Int64.Type}, {"ProgrammeKey", Int64.Type}, {"BusinessUnitKey", Int64.Type}, {"ProjectManagerKey", Int64.Type}, {"SponsorKey", Int64.Type}, {"LocationKey", Int64.Type}, {"DeliveryModelKey", Int64.Type}, {"StrategicThemeKey", Int64.Type}, {"ProjectStatus", type text}, {"LifecycleStage", type text}, {"RAGStatus", type text}, {"PlannedProgressPct", type number}, {"ActualProgressPct", type number}, {"BaselineBudgetEUR", Int64.Type}, {"PlannedCostToDateEUR", Int64.Type}, {"ActualCostToDateEUR", Int64.Type}, {"ForecastTotalCostEUR", Int64.Type}, {"ScheduleVarianceEUR", Int64.Type}, {"CostVarianceEUR", Int64.Type}, {"SchedulePerformanceIndex", type number}, {"CostPerformanceIndex", type number}, {"BaselineCompletionDateKey", Int64.Type}, {"ForecastCompletionDateKey", Int64.Type}, {"ForecastDelayDays", Int64.Type}, {"TotalMilestones", Int64.Type}, {"MilestonesDue", Int64.Type}, {"MilestonesCompletedOnTime", Int64.Type}, {"OverdueMilestones", Int64.Type}, {"CriticalMilestonesOverdue", Int64.Type}, {"PlannedResourceHours", Int64.Type}, {"AvailableResourceHours", Int64.Type}, {"ActualResourceHours", Int64.Type}, {"ResourceCapacityGapHours", Int64.Type}, {"OpenRisks", Int64.Type}, {"CriticalRisks", Int64.Type}, {"RiskExposureScore", Int64.Type}, {"OverdueMitigationActions", Int64.Type}, {"PlannedBenefitEUR", Int64.Type}, {"PlannedBenefitToDateEUR", Int64.Type}, {"ForecastBenefitEUR", Int64.Type}, {"RealisedBenefitToDateEUR", Int64.Type}, {"BenefitRealisationPct", type number}, {"ApprovedScopeChanges", Int64.Type}, {"ApprovedChangeValueEUR", Int64.Type}, {"OpenQualityDefects", Int64.Type}, {"StakeholderConfidenceScore", Int64.Type}, {"PortfolioHealthScore", type number}}, "en-US")
+				in
+				  #"Changed column type"
+

@@ -1,0 +1,32 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["FactProjectMonthly","DimProject","DimDate","DimProgramme","DimBusinessUnit","DimEmployee","DimLocation","DimDeliveryModel","DimStrategicTheme","_Measures"]
+
+annotation PBI_ProTooling = ["TMDLView_Desktop","DevMode"]
+
+ref table FactProjectMonthly
+ref table DimProject
+ref table DateTableTemplate_4c67b38b-1316-4e52-a04e-9744b4698068
+ref table LocalDateTable_4fb18273-ba6a-4eee-9472-9587e2bade35
+ref table LocalDateTable_be8fa65b-141c-4e9b-8557-ebe2d0b1be66
+ref table DimDate
+ref table LocalDateTable_5844d154-6c1b-4a3a-8475-7e158c4e2abb
+ref table DimProgramme
+ref table DimBusinessUnit
+ref table DimEmployee
+ref table DimLocation
+ref table DimDeliveryModel
+ref table DimStrategicTheme
+ref table _Measures
+
+ref cultureInfo en-US
+

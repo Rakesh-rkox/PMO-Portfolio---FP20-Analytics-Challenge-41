@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset filters (Decision board)",
+  "name": "bkmResetP2",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "b1a1000000000000a002",
+      "b1a1000000000000a003",
+      "b1a1000000000000a004"
+    ]
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "9d4e1b7a5c2f8e3a6b01",
+    "sections": {
+      "9d4e1b7a5c2f8e3a6b01": {
+        "visualContainers": {
+          "b1a1000000000000a002": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "b1a1000000000000a003": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          },
+          "b1a1000000000000a004": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

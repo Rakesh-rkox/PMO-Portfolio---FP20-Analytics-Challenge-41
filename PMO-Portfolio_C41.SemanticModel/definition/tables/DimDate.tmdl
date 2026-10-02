@@ -1,0 +1,114 @@
+table DimDate
+	lineageTag: 2ef1f4bd-17e9-4c89-b0a1-06f32840f7ab
+
+	column DateKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: deaa7777-9684-438f-b56a-558b08083b7d
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c708c493-7007-4e3a-88d9-20e10cece583
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: bbff3691-d8be-4b91-a0e3-d1cbbeafdb8b
+			defaultHierarchy: LocalDateTable_5844d154-6c1b-4a3a-8475-7e158c4e2abb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: d5d92cd5-32a2-4ea6-89e6-9ea6c527a79b
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: b7102a96-db54-4811-9882-71e4097026da
+		summarizeBy: sum
+		sourceColumn: MonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 53c250ef-5151-4cc4-a84c-4b08aabc78a0
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: 6acac4f7-db66-4edf-a482-7f7f1619f136
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYear
+		dataType: int64
+		formatString: 0
+		lineageTag: 945cfb9b-d962-44f6-a681-b8af6d0009a4
+		summarizeBy: sum
+		sourceColumn: FiscalYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYearLabel
+		dataType: string
+		lineageTag: ee347f47-aa89-4260-a3d8-cb7da8fbe681
+		summarizeBy: none
+		sourceColumn: FiscalYearLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekend
+		dataType: int64
+		formatString: 0
+		lineageTag: 62306d29-77a7-45f5-902d-0d26a9185ffa
+		summarizeBy: sum
+		sourceColumn: IsWeekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month = FORMAT ( DimDate[Date], "YYYY-MM" )
+		dataType: string
+		lineageTag: 7ba65a7c-1529-4f31-863d-adfac8fc7f89
+		summarizeBy: none
+
+	column 'Is Month End' = IF ( DimDate[Date] = EOMONTH ( DimDate[Date], 0 ), 1, 0 )
+		dataType: int64
+		lineageTag: 80b14baf-7d4f-4272-8cb5-522dedfc9e77
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\ENVY\Downloads\PMO-Portfolio_C41\PMO Portfolio_From Strategy to Success_C41.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "DimDate", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"DateKey", Int64.Type}, {"Date", type date}, {"Year", Int64.Type}, {"MonthNumber", Int64.Type}, {"MonthName", type text}, {"Quarter", type text}, {"FiscalYear", Int64.Type}, {"FiscalYearLabel", type text}, {"IsWeekend", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
+
